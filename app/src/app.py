@@ -7,10 +7,9 @@ def create_app():
     app = Flask(__name__)
     app.config.from_object(Config)
     
-    # Включаем CORS для всех доменов
     CORS(app)
     
-    # Регистрируем маршруты
+ 
     register_routes(app)
     
     return app
